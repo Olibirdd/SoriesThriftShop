@@ -6,7 +6,7 @@
     android:background="@drawable/land"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".FavouritesActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -116,7 +116,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CART"
+        android:text="FAVOURITES"
         android:textColor="#FFA500"
         android:textSize="35dp"
         android:textStyle="bold"
