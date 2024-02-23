@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_main)
+        val tvHello = binding.tvFragmenting
+
 
         bottomNavigationView = findViewById(R.id.bottomNav)
 
