@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_favourites"
+            android:icon="@drawable/ic_favorite"
+            android:title="Favourites" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_shopping_cart"
+            android:title="Cart" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person"
+            android:title="Profile" />
+        <!-- Add other menu items as needed -->
+    </group>
+</menu>
