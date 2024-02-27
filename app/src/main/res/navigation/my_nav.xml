@@ -35,7 +35,11 @@
         android:id="@+id/profileFragment2"
         android:name="com.ferrer.johnoliver.block1.project.soriesthriftshop.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment2_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signupFragment"
         android:name="com.ferrer.johnoliver.block1.project.soriesthriftshop.SignupFragment"

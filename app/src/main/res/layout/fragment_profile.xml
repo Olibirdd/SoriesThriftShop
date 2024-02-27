@@ -20,5 +20,18 @@
             android:textSize="35dp"
             android:textStyle="bold"
             android:textColor="#FFA500"/>
+
+        <Button
+            android:id="@+id/out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="121dp"
+            android:backgroundTint="#FFC0CB"
+            android:text="Logout"
+            android:textColor="#FF00FF"
+            android:textStyle="bold" />
     </RelativeLayout>
 </FrameLayout>

@@ -27,6 +27,8 @@
         android:layout_height="52dp"
         android:hint="Input Username"
         android:inputType="textPassword"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,9 +38,12 @@
         app:layout_constraintVertical_bias="0.438" />
 
     <EditText
+        android:id="@+id/pword"
         android:layout_width="287dp"
         android:layout_height="52dp"
         android:hint="Input Pasword"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
         android:inputType="textPassword"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -53,6 +58,8 @@
         android:layout_width="287dp"
         android:layout_height="52dp"
         android:hint="Confirm Password"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
         android:inputType="textPassword"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

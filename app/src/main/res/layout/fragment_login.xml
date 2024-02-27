@@ -22,6 +22,7 @@
         app:layout_constraintVertical_bias="0.074" />
 
     <EditText
+        android:id="@+id/Uname"
         android:layout_width="287dp"
         android:layout_height="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,10 +30,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.562"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
         android:hint="Username"
         android:inputType="text" />
 
     <EditText
+        android:id="@+id/pass"
         android:layout_width="287dp"
         android:layout_height="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,6 +45,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.656"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
         android:hint="Password"
         android:inputType="textPassword"/>
 
