@@ -1,13 +1,12 @@
 package com.ferrer.johnoliver.block1.project.soriesthriftshop;
 
+
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.findNavController
 import com.ferrer.johnoliver.block1.project.soriesthriftshop.CartFragment
-import com.ferrer.johnoliver.block1.project.soriesthriftshop.FavouritesFragment
-import com.ferrer.johnoliver.block1.project.soriesthriftshop.HomeFragment
 import com.ferrer.johnoliver.block1.project.soriesthriftshop.ProfileFragment
 import com.ferrer.johnoliver.block1.project.soriesthriftshop.R
 import com.ferrer.johnoliver.block1.project.soriesthriftshop.databinding.ActivityMainBinding

@@ -17,7 +17,7 @@ class CartFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         val view = inflater.inflate(R.layout.fragment_cart, container, false)
         listView = view.findViewById(R.id.listView)
         setupCartObserver()
@@ -31,6 +31,7 @@ class CartFragment : Fragment() {
         }
     }
 }
+
 
 
 

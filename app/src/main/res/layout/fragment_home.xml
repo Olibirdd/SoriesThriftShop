@@ -29,319 +29,598 @@
                 android:layout_marginTop="20dp"
                 android:src="@drawable/bonnie_blouse_cream" />
 
-            <Button
-                android:id="@+id/add"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img1"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add1"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img2"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add2"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img3"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add3"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img4"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add4"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img5"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add5"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img6"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-
-            <Button
-                android:id="@+id/add6"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img7"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add7"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img9"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add9"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img10"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-            <Button
-                android:id="@+id/add10"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img11"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add11"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img12"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add12"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img13"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-            <Button
-                android:id="@+id/add13"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
 
+                <Button
+                    android:id="@+id/add13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img14"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add14"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
 
+                <Button
+                    android:id="@+id/add14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img15"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add15"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
 
+                <Button
+                    android:id="@+id/add15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img16"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add16"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img17"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add17"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img18"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add18"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img19"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add19"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/img20"
                 android:layout_width="118dp"
                 android:layout_height="125dp"
-                android:src="@drawable/bonnie_blouse_cream"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bonnie_blouse_cream" />
 
-
-            <Button
-                android:id="@+id/add20"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Cart"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="-20dp" />
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/fav20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Favorites"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
@@ -360,4 +639,3 @@
         app:layout_constraintVertical_bias="0.038" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

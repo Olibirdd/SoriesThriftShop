@@ -59,7 +59,11 @@ class LoginFragment : Fragment() {
     }
 
     private fun startSignupFragment() {
-        findNavController().navigate(R.id.action_loginFragment_to_signupFragment)
+        val fragmentManager: FragmentManager = requireActivity().supportFragmentManager
+        fragmentManager.beginTransaction()
+            .replace(android.R.id.content, SignupFragment())
+            .addToBackStack(null)
+            .commit()
     }
 }
 
