@@ -18,7 +18,11 @@
         android:id="@+id/homeFragment2"
         android:name="com.ferrer.johnoliver.block1.project.soriesthriftshop.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_vintageFragment"
+            app:destination="@id/vintageFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.ferrer.johnoliver.block1.project.soriesthriftshop.LoginFragment"
@@ -61,4 +65,9 @@
             android:id="@+id/action_welcomeFragment_to_signupFragment"
             app:destination="@id/signupFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/vintageFragment"
+        android:name="com.ferrer.johnoliver.block1.project.soriesthriftshop.VintageFragment"
+        android:label="fragment_vintge"
+        tools:layout="@layout/fragment_vintge" />
 </navigation>
