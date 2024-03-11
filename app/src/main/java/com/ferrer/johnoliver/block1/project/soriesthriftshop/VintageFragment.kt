@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
+import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.activityViewModels
 import com.ferrer.johnoliver.block1.project.soriesthriftshop.databinding.FragmentVintgeBinding
 import androidx.fragment.app.activityViewModels
@@ -28,6 +29,9 @@ class VintageFragment : Fragment() {
             savedInstanceState: Bundle?
         ): View {
             binding = FragmentVintgeBinding.inflate(inflater, container, false)
+            binding.button5.setOnClickListener{
+                startHomeFragment()
+            }
 
             val addToCartButtonIds = arrayOf(
                 R.id.add, R.id.add1, R.id.add2, R.id.add3, R.id.add4,
@@ -68,6 +72,15 @@ class VintageFragment : Fragment() {
         private fun addToFavorites(itemName: String) {
             favoritesViewModel.addToFavorites(itemName)
             Toast.makeText(context, "$itemName added to favourites", Toast.LENGTH_SHORT).show()
+        }
+        private fun startHomeFragment() {
+            val fragmentManager: FragmentManager = requireActivity().supportFragmentManager
+            fragmentManager.beginTransaction()
+                .replace(R.id.fragment_container,
+                    com.ferrer.johnoliver.block1.project.soriesthriftshop.HomeFragment()
+                )
+                .addToBackStack(null)
+                .commit()
         }
     }
 }

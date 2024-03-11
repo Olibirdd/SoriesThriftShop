@@ -17,9 +17,9 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view = inflater.inflate(R.layout.fragment_home, container, false)
+        binding = FragmentHomeBinding.inflate(inflater,container,false)
 
-        binding.imageView1.setOnClickListener{
+        binding.shirts.setOnClickListener{
             startVintageFragment()
         }
 
