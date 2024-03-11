@@ -15,40 +15,40 @@
         android:textColor="#FFA500"
         android:textSize="32dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.074" />
+        app:layout_constraintVertical_bias="0.55" />
 
     <EditText
         android:id="@+id/Uname"
         android:layout_width="287dp"
         android:layout_height="52dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/black"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/pass"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.562"
-        android:backgroundTint="@color/black"
-        android:textColor="@color/black"
-        android:hint="Username"
-        android:inputType="text" />
+        app:layout_constraintVertical_bias="0.961" />
 
     <EditText
         android:id="@+id/pass"
         android:layout_width="287dp"
         android:layout_height="52dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/black"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.656"
-        android:backgroundTint="@color/black"
-        android:textColor="@color/black"
-        android:hint="Password"
-        android:inputType="textPassword"/>
+        app:layout_constraintVertical_bias="0.973" />
 
     <Button
         android:id="@+id/button3"
@@ -66,16 +66,17 @@
         app:layout_constraintVertical_bias="0.807" />
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Don't Have an account?"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.717" />
+        app:layout_constraintVertical_bias="0.967" />
 
     <TextView
         android:id="@+id/sign"
@@ -85,8 +86,8 @@
         android:textColor="#A020F0"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintEnd_toEndOf="@+id/pass"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.716" />
