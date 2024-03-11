@@ -70,7 +70,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/cardigan_croptop" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -100,7 +100,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/cider_disty_lapel_halter_dress" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -130,7 +130,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/croptop_sweater" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -160,7 +160,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/cropped_wool_turtleneck_sweater" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -190,7 +190,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/floral_linen_blend_midi_dress" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -220,7 +220,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/floral_puff_sleeve_boho_midi_dress" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -250,7 +250,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/gucci_tweed_dress" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -280,7 +280,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/simone_rocha_cropped_knitted_cardigan" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -310,7 +310,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/knit_polo_croptop" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -340,7 +340,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/pin_stripe_longsleeve_blouse" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -370,7 +370,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/plaid_dress" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -400,7 +400,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/polo_dress" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -430,7 +430,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/polka_dot_dress" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -460,7 +460,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/milly_micro_striped_flare_dress" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -490,7 +490,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/lantern_long_sleeve" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -520,7 +520,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/polo_shirt" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -580,7 +580,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/v_neck_blouse_croptop" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -610,7 +610,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/woven_vest" />
 
             <LinearLayout
                 android:layout_width="wrap_content"

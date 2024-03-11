@@ -58,6 +58,9 @@ class SignupFragment : Fragment() {
         binding.login.setOnClickListener {
             startLoginFragment()
         }
+        binding.sign.setOnClickListener {
+            startLoginFragment()
+        }
     }
 
     private fun startLoginFragment() {

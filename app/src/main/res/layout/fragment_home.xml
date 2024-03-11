@@ -42,14 +42,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="15dp"
-                    android:src="@drawable/baggy_pants"
+                    android:src="@drawable/blouse_shirt"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
                 <ImageView
                     android:id="@+id/imageView45"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/baggy_pants"
+                    android:src="@drawable/bonnie_blouse_cream"
                     android:layout_marginStart="250dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
@@ -58,8 +58,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="15dp"
-                    android:text="Text below image 3"
-                    android:layout_marginStart="250dp"
+                    android:text="Clothes"
+                    android:layout_marginStart="300dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/imageView45"
                     android:layout_marginTop="8dp"/>
@@ -68,9 +68,9 @@
                     android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="67dp"
                     android:textSize="15dp"
-                    android:text="Text below image 1"
+                    android:text="Clothes"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/imageView1"
                     android:layout_marginTop="8dp"/>
@@ -87,14 +87,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="15dp"
-                    android:src="@drawable/baggy_pants"
+                    android:src="@drawable/balmin_cargo_short"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
                 <ImageView
                     android:id="@+id/imageView54"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/baggy_pants"
+                    android:src="@drawable/button_decor_high_waist_short"
                     android:layout_marginStart="250dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
@@ -103,8 +103,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="15dp"
-                    android:text="Text below image 3"
-                    android:layout_marginStart="250dp"
+                    android:text="Shorts"
+                    android:layout_marginStart="300dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/imageView54"
                     android:layout_marginTop="8dp"/>
@@ -113,9 +113,9 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="67dp"
                     android:textSize="15dp"
-                    android:text="Text below image 2"
+                    android:text="Shorts"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/imageView2"
                     android:layout_marginTop="8dp"/>
@@ -139,7 +139,7 @@
                     android:id="@+id/imageView65"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/baggy_pants"
+                    android:src="@drawable/blue_pants_with_white_belt"
                     android:layout_marginStart="250dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
@@ -147,9 +147,9 @@
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="67dp"
                     android:textSize="15dp"
-                    android:text="Text below image 3"
+                    android:text="Pants"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/imageView3"
                     android:layout_marginTop="8dp"/>
@@ -158,14 +158,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="15dp"
-                    android:text="Text below image 3"
+                    android:text="Pants"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginStart="250dp"
+                    android:layout_marginStart="300dp"
                     app:layout_constraintTop_toBottomOf="@id/imageView65"
                     android:layout_marginTop="8dp"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <!-- Add more pairs as needed -->
 
         </LinearLayout>
     </ScrollView>
