@@ -28,14 +28,17 @@ class ProfileFragment : Fragment() {
 
         // Set click listener for the button after binding initialization
         binding.out.setOnClickListener {
+            SessionManager.setLoggedIn(requireContext(), false) // Logging out the user
             startWelcomeActivity()
         }
     }
+
     private fun startWelcomeActivity() {
         val intent = Intent(requireActivity(), WelcomeActivity::class.java)
         startActivity(intent)
         requireActivity().finish()
     }
+
     object SessionManager {
         private const val PREF_NAME = "MyAppPref"
         private const val KEY_IS_LOGGED_IN = "isLoggedIn"

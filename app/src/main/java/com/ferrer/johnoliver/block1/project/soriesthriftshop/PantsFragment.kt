@@ -7,17 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
-import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.activityViewModels
+import com.ferrer.johnoliver.block1.project.soriesthriftshop.databinding.FragmentPantsBinding
 import com.ferrer.johnoliver.block1.project.soriesthriftshop.databinding.FragmentVintageBinding
-import com.ferrer.johnoliver.block1.project.soriesthriftshop.CartViewModel
-import com.ferrer.johnoliver.block1.project.soriesthriftshop.FavouritesViewModel
-import com.ferrer.johnoliver.block1.project.soriesthriftshop.R
-import com.ferrer.johnoliver.block1.project.soriesthriftshop.HomeFragment
 
-class VintageFragment : Fragment() {
+class PantsFragment : Fragment() {
+    private lateinit var binding: FragmentPantsBinding
 
-    private lateinit var binding: FragmentVintageBinding
     private val favoritesViewModel: FavouritesViewModel by activityViewModels()
     private val cartViewModel: CartViewModel by activityViewModels()
     private val cartItems: MutableList<String> = mutableListOf()
@@ -27,7 +23,7 @@ class VintageFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentVintageBinding.inflate(inflater, container, false)
+        binding = FragmentPantsBinding.inflate(inflater, container, false)
         binding.button5.setOnClickListener {
             requireActivity().onBackPressed()
         }
@@ -48,14 +44,14 @@ class VintageFragment : Fragment() {
 
         for (buttonId in addToCartButtonIds) {
             binding.root.findViewById<Button>(buttonId).setOnClickListener {
-                val itemName = "Clothes ${addToCartButtonIds.indexOf(buttonId) + 1}"
+                val itemName = "Item ${addToCartButtonIds.indexOf(buttonId) + 1}"
                 addToCart(itemName)
             }
         }
 
         for (buttonId in addToFavoritesButtonIds) {
             binding.root.findViewById<Button>(buttonId)?.setOnClickListener {
-                val itemName = "Clothes ${addToFavoritesButtonIds.indexOf(buttonId) + 1}"
+                val itemName = "Item ${addToFavoritesButtonIds.indexOf(buttonId) + 1}"
                 addToFavorites(itemName)
             }
         }

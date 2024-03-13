@@ -20,29 +20,27 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var dbHelper: DatabaseHelper
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        // Initialize the SQLite database helper
         dbHelper = DatabaseHelper(this)
 
-
+        // Set up bottom navigation view
         binding.bottomNavigationView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
 
-        ProfileFragment.SessionManager.setLoggedIn(this, true)
-
+        // Check if the user is already logged in
         val isLoggedIn = ProfileFragment.SessionManager.isLoggedIn(this)
 
-
-        ProfileFragment.SessionManager.setLoggedIn(this, false)
-
-
-
-
-
+        if (isLoggedIn) {
+            // If the user is logged in, load the HomeFragment
+            loadFragment(HomeFragment())
+        } else {
+            // If the user is not logged in, load the ProfileFragment
+            loadFragment(ProfileFragment())
+        }
     }
 
     private val onNavigationItemSelectedListener =
@@ -68,11 +66,11 @@ class MainActivity : AppCompatActivity() {
             false
         }
 
-
     private fun loadFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment)
             .commit()
     }
 }
+
 

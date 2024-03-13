@@ -13,6 +13,9 @@
         android:theme="@style/Theme.SoriesThriftShop"
         tools:targetApi="31">
         <activity
+            android:name=".VintageActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity

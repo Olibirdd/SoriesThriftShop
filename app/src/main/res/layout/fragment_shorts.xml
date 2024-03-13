@@ -3,9 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="40dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/home"
-    tools:context=".VintageFragment">
+    tools:context=".ShortsFragment">
 
     <TextView
         android:id="@+id/textView"
@@ -39,7 +40,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/balmin_cargo_short" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -69,7 +70,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/cardigan_croptop" />
+                android:src="@drawable/button_decor_high_waist_short" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -99,7 +100,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/cider_disty_lapel_halter_dress" />
+                android:src="@drawable/cleopatra_stone_short" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -129,7 +130,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/croptop_sweater" />
+                android:src="@drawable/cotton_denim_short" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -159,7 +160,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/cropped_wool_turtleneck_sweater" />
+                android:src="@drawable/denim_short_with_belt" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -189,7 +190,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/floral_linen_blend_midi_dress" />
+                android:src="@drawable/frill_waist_denim_short" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -219,7 +220,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/floral_puff_sleeve_boho_midi_dress" />
+                android:src="@drawable/plus_flap_pocket_cargo_short" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -249,7 +250,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/gucci_tweed_dress" />
+                android:src="@drawable/river_island_high_waisted_knicker_short" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -279,7 +280,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/simone_rocha_cropped_knitted_cardigan" />
+                android:src="@drawable/zip_front_short_romper" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -309,7 +310,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/knit_polo_croptop" />
+                android:src="@drawable/vintage_vouge" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -339,7 +340,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/pin_stripe_longsleeve_blouse" />
+                android:src="@drawable/classic_cutoffs" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -369,7 +370,7 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/plaid_dress" />
+                android:src="@drawable/heritage_hemlines" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -399,7 +400,14 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/polo_dress" />
+                android:src="@drawable/inspired_shorts" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inspired Shorts"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -429,7 +437,14 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/polka_dot_dress" />
+                android:src="@drawable/nostalgia_knickers" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nostalgia Knickers"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -459,7 +474,14 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/milly_micro_striped_flare_dress" />
+                android:src="@drawable/oldschool_chic_bottoms" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Old School Chic Bottoms"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -489,7 +511,14 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/lantern_long_sleeve" />
+                android:src="@drawable/rustic_retro_shorts" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rustic Retro Shorts"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -519,7 +548,14 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/polo_shirt" />
+                android:src="@drawable/retro_revival_shorts" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retro Revival Shorts"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -549,7 +585,14 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
+                android:src="@drawable/throwback_trunks" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Throwback Trunks"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -579,7 +622,14 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/v_neck_blouse_croptop" />
+                android:src="@drawable/timeless_tailored_shorts" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timeless Tailored Shorts"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -609,7 +659,14 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/woven_vest" />
+                android:src="@drawable/vintage_verve_shorts" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vintage Verver Shorts"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -638,15 +695,14 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button69"
         android:layout_width="50dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/baseline_arrow_back_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

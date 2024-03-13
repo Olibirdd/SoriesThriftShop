@@ -20,11 +20,11 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment2_to_vintageFragment"
-            app:destination="@id/vintageFragment" />
-        <action
             android:id="@+id/action_homeFragment2_to_clothesFragment"
             app:destination="@id/clothesFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_vintageFragment"
+            app:destination="@id/vintageFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -69,20 +69,20 @@
             app:destination="@id/signupFragment" />
     </fragment>
     <fragment
-        android:id="@+id/vintageFragment"
-        android:name="com.ferrer.johnoliver.block1.project.soriesthriftshop.VintageFragment"
-        android:label="fragment_vintge"
-        tools:layout="@layout/fragment_vintge" >
-        <action
-            android:id="@+id/action_vintageFragment_to_homeFragment2"
-            app:destination="@id/homeFragment2" />
-    </fragment>
-    <fragment
         android:id="@+id/clothesFragment"
         android:name="com.ferrer.johnoliver.block1.project.soriesthriftshop.ClothesFragment"
         android:label="ClothesFragment" >
         <action
             android:id="@+id/action_clothesFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/vintageFragment"
+        android:name="com.ferrer.johnoliver.block1.project.soriesthriftshop.VintageFragment"
+        android:label="fragment_vintage"
+        tools:layout="@layout/fragment_vintage" >
+        <action
+            android:id="@+id/action_vintageFragment_to_homeFragment2"
             app:destination="@id/homeFragment2" />
     </fragment>
 </navigation>
