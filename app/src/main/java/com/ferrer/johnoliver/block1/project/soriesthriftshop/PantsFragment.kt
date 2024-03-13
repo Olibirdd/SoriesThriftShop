@@ -44,14 +44,14 @@ class PantsFragment : Fragment() {
 
         for (buttonId in addToCartButtonIds) {
             binding.root.findViewById<Button>(buttonId).setOnClickListener {
-                val itemName = "Item ${addToCartButtonIds.indexOf(buttonId) + 1}"
+                val itemName = "Pants ${addToCartButtonIds.indexOf(buttonId) + 1}"
                 addToCart(itemName)
             }
         }
 
         for (buttonId in addToFavoritesButtonIds) {
             binding.root.findViewById<Button>(buttonId)?.setOnClickListener {
-                val itemName = "Item ${addToFavoritesButtonIds.indexOf(buttonId) + 1}"
+                val itemName = "Pants ${addToFavoritesButtonIds.indexOf(buttonId) + 1}"
                 addToFavorites(itemName)
             }
         }
@@ -61,11 +61,11 @@ class PantsFragment : Fragment() {
 
     private fun addToCart(itemName: String) {
         cartViewModel.addToCart(itemName)
-        Toast.makeText(context, "$itemName added to cart", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "$itemName is added to cart", Toast.LENGTH_SHORT).show()
     }
 
     private fun addToFavorites(itemName: String) {
         favoritesViewModel.addToFavorites(itemName)
-        Toast.makeText(context, "$itemName added to favourites", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "$itemName is added to favourites", Toast.LENGTH_SHORT).show()
     }
 }

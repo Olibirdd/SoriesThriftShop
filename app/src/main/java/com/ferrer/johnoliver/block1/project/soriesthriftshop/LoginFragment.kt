@@ -12,11 +12,14 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.ferrer.johnoliver.block1.project.soriesthriftshop.MainActivity
 import com.ferrer.johnoliver.block1.project.soriesthriftshop.R
+import android.content.Context
+import android.content.SharedPreferences
 
 class LoginFragment : Fragment() {
 
     private lateinit var binding: FragmentLoginBinding
     private lateinit var dbHelper: DatabaseHelper
+    private lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,6 +35,9 @@ class LoginFragment : Fragment() {
         // Initialize the SQLite database helper
         dbHelper = DatabaseHelper(requireContext())
 
+        // Initialize SharedPreferences
+        sharedPreferences = requireContext().getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
+
         binding.button3.setOnClickListener {
             val username = binding.Uname.text.toString().trim()
             val password = binding.pass.text.toString().trim()
@@ -39,6 +45,8 @@ class LoginFragment : Fragment() {
             if (username.isNotEmpty() && password.isNotEmpty()) {
                 if (dbHelper.verifyUser(username, password)) {
                     Toast.makeText(requireContext(), "Login successful!", Toast.LENGTH_SHORT).show()
+                    // Store username in SharedPreferences
+                    sharedPreferences.edit().putString("username", username).apply()
                     startMainActivity()
                 } else {
                     Toast.makeText(requireContext(), "Invalid username or password", Toast.LENGTH_SHORT).show()

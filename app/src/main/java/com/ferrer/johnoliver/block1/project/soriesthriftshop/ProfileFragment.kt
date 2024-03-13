@@ -9,10 +9,12 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.ferrer.johnoliver.block1.project.soriesthriftshop.databinding.FragmentProfileBinding
 import android.content.Context
+import android.content.SharedPreferences
 
 class ProfileFragment : Fragment() {
 
     private lateinit var binding: FragmentProfileBinding
+    private lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,7 +28,16 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Set click listener for the button after binding initialization
+        // Initialize SharedPreferences
+        sharedPreferences = requireContext().getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
+
+        // Retrieve username from SharedPreferences
+        val username = sharedPreferences.getString("username", "DefaultUsername")
+
+        // Set username to TextView
+        binding.textViewUsername.text = username
+
+        // Set click listener for the logout button
         binding.out.setOnClickListener {
             SessionManager.setLoggedIn(requireContext(), false) // Logging out the user
             startWelcomeActivity()
@@ -55,3 +66,4 @@ class ProfileFragment : Fragment() {
         }
     }
 }
+

@@ -41,6 +41,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/bonnie_blouse_cream" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bonnie Blouse Cream"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -71,6 +78,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/cardigan_croptop" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cardigan Croptop"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -101,6 +115,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/cider_disty_lapel_halter_dress" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cider Lapel Halter Dress"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -131,6 +152,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/croptop_sweater" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Croptop Sweater"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -161,7 +189,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/cropped_wool_turtleneck_sweater" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cropped Wool Turtle Neck Sweater"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -191,6 +225,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/floral_linen_blend_midi_dress" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Floral Linen Blen Midi Dress"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -221,6 +262,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/floral_puff_sleeve_boho_midi_dress" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Floral Puff Sleeve Boho Midi Dress"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -251,6 +299,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/gucci_tweed_dress" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gucci Tweed Dress"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -281,7 +336,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/simone_rocha_cropped_knitted_cardigan" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simone Rocha Cropped Knitted Cardigan"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -311,7 +372,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/knit_polo_croptop" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Knit Polo Croptop"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -341,7 +408,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/pin_stripe_longsleeve_blouse" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pin Stripe Longsleeve Blouse"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -371,7 +444,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/plaid_dress" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plaid Dress"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -401,7 +480,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/polo_dress" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Polo Dress"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -431,7 +516,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/polka_dot_dress" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Polka Dot Dress"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -461,7 +552,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/milly_micro_striped_flare_dress" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Milly Micro Striped Flare Dress"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -491,7 +588,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/lantern_long_sleeve" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lantern Long Sleeve"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -521,7 +624,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/polo_shirt" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Polo Shirt"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -550,8 +659,14 @@
                 android:layout_height="125dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bonnie_blouse_cream" />
-
+                android:src="@drawable/short_denim_jumsuit" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short Denim Jumpsuit"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -581,6 +696,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/v_neck_blouse_croptop" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V-Neck Blouse Croptop"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -611,7 +733,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/woven_vest" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Woven Vest"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

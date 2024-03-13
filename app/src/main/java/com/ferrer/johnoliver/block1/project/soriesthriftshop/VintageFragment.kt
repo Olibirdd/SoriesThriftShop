@@ -65,11 +65,11 @@ class VintageFragment : Fragment() {
 
     private fun addToCart(itemName: String) {
         cartViewModel.addToCart(itemName)
-        Toast.makeText(context, "$itemName added to cart", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "$itemName is added to cart", Toast.LENGTH_SHORT).show()
     }
 
     private fun addToFavorites(itemName: String) {
         favoritesViewModel.addToFavorites(itemName)
-        Toast.makeText(context, "$itemName added to favourites", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "$itemName is added to favourites", Toast.LENGTH_SHORT).show()
     }
 }
