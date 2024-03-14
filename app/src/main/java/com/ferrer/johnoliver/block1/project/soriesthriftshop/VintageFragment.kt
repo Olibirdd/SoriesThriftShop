@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
-import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.activityViewModels
 import com.ferrer.johnoliver.block1.project.soriesthriftshop.databinding.FragmentVintageBinding
 import com.ferrer.johnoliver.block1.project.soriesthriftshop.CartViewModel
@@ -18,10 +17,8 @@ import com.ferrer.johnoliver.block1.project.soriesthriftshop.HomeFragment
 class VintageFragment : Fragment() {
 
     private lateinit var binding: FragmentVintageBinding
-    private val favoritesViewModel: FavouritesViewModel by activityViewModels()
     private val cartViewModel: CartViewModel by activityViewModels()
-    private val cartItems: MutableList<String> = mutableListOf()
-    private val favouriteItems: MutableList<String> = mutableListOf()
+    private val favoritesViewModel: FavouritesViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

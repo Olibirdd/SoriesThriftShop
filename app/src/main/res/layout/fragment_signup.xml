@@ -28,7 +28,7 @@
         android:layout_width="287dp"
         android:layout_height="52dp"
         android:backgroundTint="@android:color/black"
-        android:hint="Full Name"
+        android:hint="Username"
         android:inputType="text"
         android:textColor="@android:color/black"
         android:textStyle="bold"

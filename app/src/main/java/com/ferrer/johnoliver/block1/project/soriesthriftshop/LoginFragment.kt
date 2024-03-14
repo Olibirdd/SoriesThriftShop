@@ -10,10 +10,10 @@ import androidx.fragment.app.FragmentManager
 import android.content.Intent
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
-import com.ferrer.johnoliver.block1.project.soriesthriftshop.MainActivity
 import com.ferrer.johnoliver.block1.project.soriesthriftshop.R
 import android.content.Context
 import android.content.SharedPreferences
+
 
 class LoginFragment : Fragment() {
 
@@ -65,6 +65,7 @@ class LoginFragment : Fragment() {
         startActivity(intent)
         requireActivity().finish() // Optional: finish the current activity
     }
+
 
     private fun startSignupFragment() {
         val fragmentManager: FragmentManager = requireActivity().supportFragmentManager

@@ -12,14 +12,36 @@
 
         <TextView
             android:id="@+id/textViewUsername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="100dp"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="#000000"
-        android:text="Username Placeholder"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="100dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Username Placeholder"/>
+
+        <TextView
+            android:id="@+id/cartItemCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_below="@id/textViewUsername"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:text="Cart Items: 0"/>
+
+        <TextView
+            android:id="@+id/favoritesCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_below="@id/cartItemCountTextView"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:text="Favorites: 0"/>
 
         <TextView
             android:layout_width="wrap_content"

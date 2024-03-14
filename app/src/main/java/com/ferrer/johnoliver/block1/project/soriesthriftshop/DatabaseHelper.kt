@@ -26,7 +26,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         onCreate(db)
     }
 
-    fun addUser(username: String, password: String, password1: String): Long {
+    fun addUser(username: String, password: String): Long {
         val db = this.writableDatabase
         val contentValues = ContentValues()
         contentValues.put(COLUMN_USERNAME, username)
@@ -36,7 +36,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         return result
     }
 
-    fun getUser(username: String, email: String): Boolean {
+    fun getUser(username: String): Boolean {
         val db = this.readableDatabase
         val query = "SELECT * FROM $TABLE_NAME WHERE $COLUMN_USERNAME = ?"
         val cursor = db.rawQuery(query, arrayOf(username))

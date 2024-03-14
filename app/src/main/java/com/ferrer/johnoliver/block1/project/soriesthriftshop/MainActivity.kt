@@ -1,6 +1,4 @@
-package com.ferrer.johnoliver.block1.project.soriesthriftshop;
-
-
+package com.ferrer.johnoliver.block1.project.soriesthriftshop
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
@@ -13,9 +11,12 @@ import com.ferrer.johnoliver.block1.project.soriesthriftshop.databinding.Activit
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.fragment.app.Fragment
 import android.widget.Toast
-
-
-class MainActivity : AppCompatActivity() {
+import com.ferrer.johnoliver.block1.project.soriesthriftshop.CartFavouritesListener
+import com.ferrer.johnoliver.block1.project.soriesthriftshop.DatabaseHelper
+import com.ferrer.johnoliver.block1.project.soriesthriftshop.FavouritesFragment
+import com.ferrer.johnoliver.block1.project.soriesthriftshop.HomeFragment
+// Add the CartFavoritesListener interface
+class MainActivity : AppCompatActivity(), CartFavouritesListener.CartFavoritesListener {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var dbHelper: DatabaseHelper
@@ -71,6 +72,17 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.fragment_container, fragment)
             .commit()
     }
+
+    // Implement methods from CartFavoritesListener interface
+    override fun addToCart() {
+        // Handle adding item to cart
+        // For example:
+        Toast.makeText(this, "Item added to cart", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun addToFavorites() {
+        // Handle adding item to favorites
+        // For example:
+        Toast.makeText(this, "Item added to favorites", Toast.LENGTH_SHORT).show()
+    }
 }
-
-
