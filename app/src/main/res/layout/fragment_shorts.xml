@@ -617,7 +617,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Classic Cutoffs"
+                        android:text="Classic Cutoffs                    "
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp"/>
@@ -662,7 +662,7 @@
                     android:id="@+id/img12"
                     android:layout_width="118dp"
                     android:layout_height="125dp"
-                    android:src="@drawable/inspired_shorts" />
+                    android:src="@drawable/heritage_hemlines" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -673,7 +673,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Heritage Hemlines"
+                        android:text="Heritage Hemlines               "
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp"/>
@@ -718,7 +718,7 @@
                     android:id="@+id/img13"
                     android:layout_width="118dp"
                     android:layout_height="125dp"
-                    android:src="@drawable/nostalgia_knickers" />
+                    android:src="@drawable/casual_short" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -729,7 +729,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Inspired Shorts"
+                        android:text="Casual Shorts                        "
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp"/>
@@ -774,7 +774,7 @@
                     android:id="@+id/img14"
                     android:layout_width="118dp"
                     android:layout_height="125dp"
-                    android:src="@drawable/oldschool_chic_bottoms" />
+                    android:src="@drawable/nostalgia_knickers" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -785,7 +785,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nostalgia Knickers"
+                        android:text="Nostalgia Knickers               "
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp"/>
@@ -830,7 +830,7 @@
                     android:id="@+id/img15"
                     android:layout_width="118dp"
                     android:layout_height="125dp"
-                    android:src="@drawable/rustic_retro_shorts" />
+                    android:src="@drawable/oldschool_chic_bottoms" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -841,7 +841,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Old School Chic Bottoms"
+                        android:text="Old School Chic Bottoms   "
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp"/>
@@ -886,7 +886,7 @@
                     android:id="@+id/img16"
                     android:layout_width="118dp"
                     android:layout_height="125dp"
-                    android:src="@drawable/retro_revival_shorts" />
+                    android:src="@drawable/rustic_retro_shorts" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -897,7 +897,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rustic Retro Shorts"
+                        android:text="Rustic Retro Shorts               "
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp"/>
@@ -942,7 +942,7 @@
                     android:id="@+id/img17"
                     android:layout_width="118dp"
                     android:layout_height="125dp"
-                    android:src="@drawable/throwback_trunks" />
+                    android:src="@drawable/retro_revival_shorts" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -953,7 +953,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Retro Revival Shorts"
+                        android:text="Retro Revival Shorts            "
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp"/>
@@ -997,7 +997,7 @@
                     android:id="@+id/img18"
                     android:layout_width="118dp"
                     android:layout_height="125dp"
-                    android:src="@drawable/timeless_tailored_shorts" />
+                    android:src="@drawable/throwback_trunks" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -1008,7 +1008,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ThrowBack Trunks     "
+                        android:text="ThrowBack Trunks              "
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp"/>
@@ -1052,7 +1052,7 @@
                     android:id="@+id/img19"
                     android:layout_width="118dp"
                     android:layout_height="125dp"
-                    android:src="@drawable/vintage_verve_shorts" />
+                    android:src="@drawable/timeless_tailored_shorts" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -1063,7 +1063,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Timeless Tailored Shorts"
+                        android:text="Timeless Tailored Shorts    "
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp"/>
@@ -1107,7 +1107,7 @@
                     android:id="@+id/img20"
                     android:layout_width="118dp"
                     android:layout_height="125dp"
-                    android:src="@drawable/woven_vest" />
+                    android:src="@drawable/vintage_verve_shorts" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -1118,7 +1118,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Vintage Verver Shorts"
+                        android:text="Vintage Verve Shorts         "
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp"/>
@@ -1156,7 +1156,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button69"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"

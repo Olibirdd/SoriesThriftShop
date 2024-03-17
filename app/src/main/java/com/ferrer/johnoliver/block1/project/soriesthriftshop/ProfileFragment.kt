@@ -48,7 +48,7 @@ class ProfileFragment : Fragment(), CartFavouritesListener.CartFavoritesListener
         })
 
         // Observe changes in favorites count
-        favoritesViewModel.favoritesCount.observe(viewLifecycleOwner, Observer { count ->
+        favoritesViewModel.favouritesCount.observe(viewLifecycleOwner, Observer { count ->
             binding.favoritesCountTextView.text = "Favorites: $count"
         })
 
