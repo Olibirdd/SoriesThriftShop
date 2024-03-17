@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -32,754 +33,1130 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-
-            <ImageView
-                android:id="@+id/img"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/balmin_cargo_short" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Balmin Cargo Short"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
-
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add"
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/balmin_cargo_short" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Balmin Cargo Short          "
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$19.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp" />
+
+                    <Button
+                        android:id="@+id/fav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
 
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img1"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/button_decor_high_waist_short" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button Decor High Waist Short"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add1"
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/button_decor_high_waist_short" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav1"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Button Decor High Waisted"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$19.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp" />
+
+                    <Button
+                        android:id="@+id/fav1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img2"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/cleopatra_stone_short" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cleopatra Stone Short"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
+
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add2"
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/cleopatra_stone_short" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav2"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cleopatra Stone Short   "
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$24.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img3"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/cotton_denim_short" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cotton Denim Short"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add3"
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/cotton_denim_short" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav3"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cotton Denim Shorts       "
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$29.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img4"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/denim_short_with_belt" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Denim Short With Belt"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
-
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add4"
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/denim_short_with_belt" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav4"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Denim Short With Belt      "
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$39.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img5"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/frill_waist_denim_short" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Frill Waist Denim Short"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
+
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add5"
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/frill_waist_denim_short" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav5"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Frill Waist Denim Short    "
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$49.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img6"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/plus_flap_pocket_cargo_short" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Plus Flap Pocket Cargo Short"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add6"
+                <ImageView
+                    android:id="@+id/img6"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/plus_flap_pocket_cargo_short" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav6"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plus Flap Pocket Cargo   "
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$99.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img7"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/river_island_high_waisted_knicker_short" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="River Island High Waisted Knicker Short"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add7"
+                <ImageView
+                    android:id="@+id/img7"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/river_island_high_waisted_knicker_short" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav7"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="River Island High Waisted"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$99.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img9"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/zip_front_short_romper" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Inspired Shorts"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add9"
+                <ImageView
+                    android:id="@+id/img9"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/inspired_shorts" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav9"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inspired Shorts                "
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$99.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img10"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/vintage_vouge" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Vintage Vogue"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add10"
+                <ImageView
+                    android:id="@+id/img10"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/vintage_vouge" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav10"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vintage Vogue                  "
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$99.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img11"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/classic_cutoffs" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Classic Cutoffs"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add11"
+                <ImageView
+                    android:id="@+id/img11"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/classic_cutoffs" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav11"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Classic Cutoffs"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$99.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img12"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/heritage_hemlines" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Heritage Hemlines"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add12"
+                <ImageView
+                    android:id="@+id/img12"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/inspired_shorts" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav12"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heritage Hemlines"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$99.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img13"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/inspired_shorts" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Inspired Shorts"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add13"
+                <ImageView
+                    android:id="@+id/img13"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/nostalgia_knickers" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav13"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inspired Shorts"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$99.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img14"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/nostalgia_knickers" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nostalgia Knickers"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add14"
+                <ImageView
+                    android:id="@+id/img14"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/oldschool_chic_bottoms" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav14"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nostalgia Knickers"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$99.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img15"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/oldschool_chic_bottoms" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Old School Chic Bottoms"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add15"
+                <ImageView
+                    android:id="@+id/img15"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/rustic_retro_shorts" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav15"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Old School Chic Bottoms"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$99.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img16"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/rustic_retro_shorts" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rustic Retro Shorts"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add16"
+                <ImageView
+                    android:id="@+id/img16"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/retro_revival_shorts" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav16"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rustic Retro Shorts"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$99.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img17"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/retro_revival_shorts" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Retro Revival Shorts"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add17"
+                <ImageView
+                    android:id="@+id/img17"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/throwback_trunks" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav17"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Retro Revival Shorts"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$99.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img18"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/throwback_trunks" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Throwback Trunks"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
-
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add18"
+                <ImageView
+                    android:id="@+id/img18"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/timeless_tailored_shorts" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav18"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ThrowBack Trunks     "
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$99.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img19"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/timeless_tailored_shorts" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Timeless Tailored Shorts"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
-
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add19"
+                <ImageView
+                    android:id="@+id/img19"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/vintage_verve_shorts" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav19"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Timeless Tailored Shorts"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$99.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-            <ImageView
-                android:id="@+id/img20"
-                android:layout_width="118dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/vintage_verve_shorts" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Vintage Verver Shorts"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"/>
-
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp">
 
-                <Button
-                    android:id="@+id/add20"
+                <ImageView
+                    android:id="@+id/img20"
+                    android:layout_width="118dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/woven_vest" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Cart"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
 
-                <Button
-                    android:id="@+id/fav20"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vintage Verver Shorts"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$99.99"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add to Favorites"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"/>
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
 
+                    <Button
+                        android:id="@+id/add20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/fav20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_favorite"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
 
     <Button
-        android:id="@+id/button69"
+        android:id="@+id/button5"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
