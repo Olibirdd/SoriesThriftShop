@@ -63,7 +63,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$19.99"
+                        android:text="₱135"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -120,7 +120,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$19.99"
+                        android:text="₱150"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -177,7 +177,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$24.99"
+                        android:text="₱160"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -233,7 +233,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$29.99"
+                        android:text="₱180"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -288,7 +288,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$39.99"
+                        android:text="₱195"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -345,7 +345,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$49.99"
+                        android:text="₱210"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -401,7 +401,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$99.99"
+                        android:text="₱225"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -457,7 +457,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$99.99"
+                        android:text="₱240"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -513,7 +513,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$99.99"
+                        android:text="₱255"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -569,7 +569,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$99.99"
+                        android:text="₱270"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -625,7 +625,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$99.99"
+                        android:text="₱285"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -681,7 +681,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$99.99"
+                        android:text="₱300"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -737,7 +737,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$99.99"
+                        android:text="₱120"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -793,7 +793,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$99.99"
+                        android:text="₱135"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -849,7 +849,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$99.99"
+                        android:text="₱150"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -905,7 +905,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$99.99"
+                        android:text="₱165"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -961,7 +961,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$99.99"
+                        android:text="₱180"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -1016,7 +1016,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$99.99"
+                        android:text="₱195"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -1071,7 +1071,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$99.99"
+                        android:text="₱210"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -1126,7 +1126,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$99.99"
+                        android:text="₱225"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 

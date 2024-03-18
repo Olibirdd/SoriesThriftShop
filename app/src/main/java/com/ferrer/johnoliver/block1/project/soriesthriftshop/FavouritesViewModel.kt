@@ -7,7 +7,6 @@ import android.util.Log
 
 class FavouritesViewModel : ViewModel() {
 
-    // Define the Item class with itemName as String and itemImageResourceId as Int
     data class Item(val itemName: String, val itemImageResourceId: Int)
 
     private val _favouriteItems = MutableLiveData<MutableList<Item>>()
@@ -21,17 +20,13 @@ class FavouritesViewModel : ViewModel() {
         _favouritesCount.value = 0
     }
 
-    // Modified function to add an item to the favourites with its ID and name
     fun addToFavourites(itemImageResourceId: Int, itemName: String) {
-        // Add logging to debug the issue
         Log.d("FavouritesViewModel", "Adding item to favourites: $itemName with image resource ID: $itemImageResourceId")
 
-        // Add the new item to the list of items
         val updatedList = _favouriteItems.value ?: mutableListOf()
         updatedList.add(Item(itemName, itemImageResourceId))
         _favouriteItems.value = updatedList
 
-        // Increment the favourites count
         _favouritesCount.value = (_favouritesCount.value ?: 0) + 1
     }
 }

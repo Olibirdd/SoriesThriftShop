@@ -26,20 +26,16 @@ class MainActivity : AppCompatActivity(), CartFavouritesListener.CartFavoritesLi
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Initialize the SQLite database helper
         dbHelper = DatabaseHelper(this)
 
-        // Set up bottom navigation view
         binding.bottomNavigationView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
 
-        // Check if the user is already logged in
         val isLoggedIn = ProfileFragment.SessionManager.isLoggedIn(this)
 
         if (isLoggedIn) {
-            // If the user is logged in, load the HomeFragment
+
             loadFragment(HomeFragment())
         } else {
-            // If the user is not logged in, load the ProfileFragment
             loadFragment(ProfileFragment())
         }
     }
@@ -73,16 +69,11 @@ class MainActivity : AppCompatActivity(), CartFavouritesListener.CartFavoritesLi
             .commit()
     }
 
-    // Implement methods from CartFavoritesListener interface
     override fun addToCart() {
-        // Handle adding item to cart
-        // For example:
         Toast.makeText(this, "Item added to cart", Toast.LENGTH_SHORT).show()
     }
 
     override fun addToFavorites() {
-        // Handle adding item to favorites
-        // For example:
         Toast.makeText(this, "Item added to favorites", Toast.LENGTH_SHORT).show()
     }
 }

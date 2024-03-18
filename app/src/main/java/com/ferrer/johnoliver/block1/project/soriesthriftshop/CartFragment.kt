@@ -1,53 +1,206 @@
 package com.ferrer.johnoliver.block1.project.soriesthriftshop
+import android.content.Intent
 import androidx.fragment.app.Fragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.ListView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import com.ferrer.johnoliver.block1.project.soriesthriftshop.databinding.FragmentCartBinding
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Observer
+
 
 class CartFragment : Fragment() {
 
     private lateinit var cartItemList: LinearLayout
+    private lateinit var emptyCartTextView: TextView
+    private lateinit var totalPriceTextView: TextView
+    private lateinit var placeholderImage: ImageView
+    private lateinit var checkoutButton: Button
     private lateinit var binding: FragmentCartBinding
     private val cartViewModel: CartViewModel by activityViewModels()
+    private val checkoutViewModel: CheckoutViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentCartBinding.inflate(inflater, container, false)
-        cartItemList = binding.cartItemList // Reference the LinearLayout
-        setupCartObserver(cartItemList) // Pass the cartItemList LinearLayout as the parent ViewGroup here
+        cartItemList = binding.cartItemList
+        emptyCartTextView = binding.emptyCartTextView
+        totalPriceTextView = binding.totalPriceTextView
+        placeholderImage = binding.placeholderImage
+        checkoutButton = binding.checkoutButton
+        setupCartObserver()
+        setupCheckoutButton()
+        setupCheckoutObserver()
         return binding.root
     }
 
-
-    private fun setupCartObserver(parent: ViewGroup) {
+    private fun setupCartObserver() {
         cartViewModel.cartItems.observe(viewLifecycleOwner) { items ->
-            // Clear the existing views before adding new ones
             cartItemList.removeAllViews()
-            items.forEach { item ->
-                val itemView = LayoutInflater.from(context).inflate(R.layout.cart_item_layout, parent, false)
 
-                // Bind data to views within the item layout
+            var totalPrice = 0.0
+
+            items.forEach { item ->
+                val itemView = LayoutInflater.from(context).inflate(R.layout.cart_item_layout, cartItemList, false)
+
                 val itemNameTextView: TextView = itemView.findViewById(R.id.itemNameTextView)
                 val itemImageView: ImageView = itemView.findViewById(R.id.itemImageView)
+                val itemCheckBox: CheckBox = itemView.findViewById(R.id.itemCheckBox)
                 itemNameTextView.text = item.itemName
 
-                // Set item image here
                 val imageResourceId = getImageIdForItem(item.itemName)
                 itemImageView.setImageResource(imageResourceId)
 
+                if (itemCheckBox.isChecked) {
+                    totalPrice += getPriceForItem(item.itemName)
+                }
+
+                itemCheckBox.setOnCheckedChangeListener { _, isChecked ->
+                    totalPrice = if (isChecked) {
+                        totalPrice + getPriceForItem(item.itemName)
+                    } else {
+                        totalPrice - getPriceForItem(item.itemName)
+                    }
+
+                    totalPriceTextView.text = getString(R.string.total_price_format, totalPrice)
+                }
+
                 cartItemList.addView(itemView)
+            }
+
+            totalPriceTextView.text = getString(R.string.total_price_format, totalPrice)
+        }
+    }
+
+    private fun setupCheckoutButton() {
+        checkoutButton.setOnClickListener {
+            val checkedItems = mutableListOf<CartViewModel.Item>()
+
+            for (i in 0 until cartItemList.childCount) {
+                val itemView = cartItemList.getChildAt(i)
+                val itemCheckBox: CheckBox = itemView.findViewById(R.id.itemCheckBox)
+
+                if (itemCheckBox.isChecked) {
+                    val itemNameTextView: TextView = itemView.findViewById(R.id.itemNameTextView)
+                    val itemName = itemNameTextView.text.toString()
+                    val item = cartViewModel.cartItems.value?.find { it.itemName == itemName }
+                    item?.let { checkedItems.add(it) }
+                }
+            }
+
+            if (checkedItems.isEmpty()) {
+                Toast.makeText(context, "No items selected for checkout.", Toast.LENGTH_SHORT).show()
+            } else {
+                binding.cartItemList.removeAllViews()
+
+                val checkoutItemsLayout = LinearLayout(context)
+                checkoutItemsLayout.orientation = LinearLayout.VERTICAL
+
+                checkedItems.forEach { item ->
+                    val itemNameTextView = TextView(context)
+                    itemNameTextView.text = item.itemName
+                    checkoutItemsLayout.addView(itemNameTextView)
+
+                    // Increment checkedOutItemCount for each checked item
+                    checkoutViewModel.incrementCheckedOutItemCount()
+                }
+
+                binding.cartItemList.addView(checkoutItemsLayout)
+
+                checkedItems.forEach { cartViewModel.removeFromCart(it.itemName) }
+
+                Toast.makeText(context, "Checkout successful. Checked items removed from cart.", Toast.LENGTH_SHORT).show()
             }
         }
     }
+
+
+    private fun setupCheckoutObserver() {
+        checkoutViewModel.checkedOutItemCount.observe(viewLifecycleOwner, Observer {
+        })
+    }
+
+    private fun getPriceForItem(itemName: String): Double {
+        return when (itemName) {
+            // Tops
+            "Bonnie Blouse Cream" -> 120.00
+            "Cardigan Croptop" -> 135.00
+            "Cider Lapel Halter Dress" -> 150.00
+            "Croptop Sweater" -> 165.00
+            "Wool Turtle Neck Sweater" -> 180.00
+            "Floral Puff Sleeve Dress" -> 195.00
+            "Gucci Tweed Dress" -> 210.00
+            "Simone Rocha Cardigan" -> 225.00
+            "Knit Polo Croptop" -> 240.00
+            "Pin Stripe Longsleeve" -> 255.00
+            "Plaid Dress" -> 270.00
+            "Polo Dress" -> 285.00
+            "Polka Dot Dress" -> 300.00
+            "Milly Micro Striped Dress" -> 120.00
+            "Lantern Long Sleeve" -> 135.00
+            "Polo Shirt" -> 150.00
+            "Short Denim Jumpsuit" -> 165.00
+            "V-Neck Blouse Croptop" -> 180.00
+            "Tie Front Trim Flouce Sleeve" -> 195.00
+            "Woven Vest" -> 210.00
+            // Shorts
+            "Balmin Cargo Short" -> 225.00
+            "Button Decor High Waisted" -> 240.00
+            "Cleopatra Stone Short" -> 255.00
+            "Cotton Denim Short" -> 270.00
+            "Denim Short with Belt" -> 285.00
+            "Frill Waist Denim Short" -> 300.00
+            "Plus Flap Pocket Cargo Short" -> 120.00
+            "River Island High Waisted Knicker Short" -> 135.00
+            "Inspired Shorts" -> 150.00
+            "Vintage Vogue" -> 165.00
+            "Classic Cutoffs" -> 180.00
+            "Heritage Hemlines" -> 195.00
+            "Casual Short" -> 210.00
+            "Nostalgia Knickers" -> 225.00
+            "OldSchool Chic Bottoms" -> 240.00
+            "Rustic Retro Shorts" -> 255.00
+            "Retro Revival Shorts" -> 270.00
+            "Throwback Trunks" -> 285.00
+            "Timeless Tailored Shorts" -> 300.00
+            "Vintage Verve Shorts" -> 120.00
+            // Pants
+            "Baggy Pants" -> 135.00
+            "Blue Pants with White Belt" -> 150.00
+            "Classic Cutoffs" -> 165.00
+            "Denim Jeans" -> 180.00
+            "Cider Waist Tie Trouser" -> 195.00
+            "Fly Solid Wide Leg Pants" -> 210.00
+            "High Waist Baggy Pants" -> 225.00
+            "High Waist Pants" -> 240.00
+            "High Waisted Wide Leg Trouser" -> 255.00
+            "Hight Waist Pants" -> 270.00
+            "Jogging Pants" -> 285.00
+            "Antique Denim Dungerees" -> 300.00
+            "Retro Low Waist Jeans" -> 120.00
+            "Super High Waisted Button Front Wide Leg" -> 135.00
+            "Trouser" -> 150.00
+            "Classic Corduroy" -> 165.00
+            "Nostalgic High Waisted" -> 180.00
+            "Retro Flare Trousers" -> 195.00
+            "Timeless Tweed" -> 210.00
+            "Vintage Velvet" -> 225.00
+
+            else -> 0.0 // Default price
+        }
+    }
+
     private fun getImageIdForItem(itemName: String): Int {
         val imageIdMap = mapOf(
             "Bonnie Blouse Cream" to R.drawable.bonnie_blouse_cream,
@@ -113,7 +266,7 @@ class CartFragment : Fragment() {
             "Vintage Velvet" to R.drawable.vintage_velvet,
             "Wide Leg Trouser" to R.drawable.high_waisted_wide_leg_trouser,
         )
-        return imageIdMap[itemName] ?: R.drawable.ic_person // Return default if no mapping found
+        return imageIdMap[itemName] ?: R.drawable.ic_person
     }
 
 }

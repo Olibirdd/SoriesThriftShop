@@ -3,36 +3,65 @@ package com.ferrer.johnoliver.block1.project.soriesthriftshop
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import android.util.Log
 
 class CartViewModel : ViewModel() {
 
-    // Define the Item class with itemName as String and itemImageResourceId as Int
-    data class Item(val itemName: String, val itemImageResourceId: Int)
+    data class Item(val itemName: String, val itemImageResourceId: Int, var isCheckedOut: Boolean = false)
 
-    private val _cartItems = MutableLiveData<MutableList<Item>>()
-    val cartItems: LiveData<MutableList<Item>> = _cartItems
+    private val _cartItems = MutableLiveData<List<Item>>()
+    val cartItems: LiveData<List<Item>> = _cartItems
 
+    private val _checkedOutItems = MutableLiveData<List<Item>>()
+    val checkedOutItems: LiveData<List<Item>> = _checkedOutItems
     private val _cartItemCount = MutableLiveData<Int>()
     val cartItemCount: LiveData<Int> = _cartItemCount
 
     init {
-        _cartItems.value = mutableListOf()
-        _cartItemCount.value = 0
+        _cartItems.value = emptyList()
+        _checkedOutItems.value = emptyList()
     }
 
-    // Modified function to add an item to the cart with its ID and name
     fun addToCart(itemImageResourceId: Int, itemName: String) {
-        // Add logging to debug the issue
-        Log.d("CartViewModel", "Adding item to cart: $itemName with image resource ID: $itemImageResourceId")
-
-        // Add the new item to the list of items
-        val updatedList = _cartItems.value ?: mutableListOf()
+        val updatedList = (_cartItems.value ?: emptyList()).toMutableList()
         updatedList.add(Item(itemName, itemImageResourceId))
         _cartItems.value = updatedList
-
-        // Increment the cart item count
-        _cartItemCount.value = (_cartItemCount.value ?: 0) + 1
     }
-}
 
+    fun removeFromCart(itemName: String) {
+        val updatedList = (_cartItems.value ?: emptyList()).toMutableList()
+        updatedList.removeAll { it.itemName == itemName }
+        _cartItems.value = updatedList
+    }
+
+    fun markAsCheckedOut(itemName: String) {
+        val updatedList = (_cartItems.value ?: emptyList()).toMutableList()
+        val checkedOutList = (_checkedOutItems.value ?: emptyList()).toMutableList()
+
+        updatedList.forEach { item ->
+            if (item.itemName == itemName) {
+                item.isCheckedOut = true
+                checkedOutList.add(item)
+            }
+        }
+
+        _cartItems.value = updatedList
+        _checkedOutItems.value = checkedOutList
+    }
+
+    fun checkoutItems() {
+        val itemsToCheckout = _cartItems.value ?: emptyList()
+        itemsToCheckout.forEach { item ->
+            if (!item.isCheckedOut) {
+                item.isCheckedOut = true
+            }
+        }
+        _cartItems.value = itemsToCheckout
+    }
+    fun removeFromCart(itemNames: List<String>) {
+        val updatedList = (_cartItems.value ?: emptyList()).toMutableList()
+        updatedList.removeAll { itemNames.contains(it.itemName) }
+        _cartItems.value = updatedList
+        _cartItemCount.value = (_cartItemCount.value ?: 0) - itemNames.size
+    }
+
+}

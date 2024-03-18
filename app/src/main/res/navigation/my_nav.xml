@@ -85,4 +85,19 @@
             android:id="@+id/action_vintageFragment_to_homeFragment2"
             app:destination="@id/homeFragment2" />
     </fragment>
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.ferrer.johnoliver.block1.project.soriesthriftshop.CheckoutFragment"
+        android:label="fragment_checkout"
+        tools:layout="@layout/fragment_checkout" />
+    <fragment
+        android:id="@+id/pantsFragment"
+        android:name="com.ferrer.johnoliver.block1.project.soriesthriftshop.PantsFragment"
+        android:label="fragment_pants"
+        tools:layout="@layout/fragment_pants" />
+    <fragment
+        android:id="@+id/shortsFragment"
+        android:name="com.ferrer.johnoliver.block1.project.soriesthriftshop.ShortsFragment"
+        android:label="fragment_shorts"
+        tools:layout="@layout/fragment_shorts" />
 </navigation>

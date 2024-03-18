@@ -12,20 +12,21 @@ import com.ferrer.johnoliver.block1.project.soriesthriftshop.databinding.Fragmen
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.activityViewModels
 
-class ProfileFragment : Fragment(), CartFavouritesListener.CartFavoritesListener {
+
+class ProfileFragment : Fragment() {
 
     private lateinit var binding: FragmentProfileBinding
     private lateinit var sharedPreferences: SharedPreferences
     private val cartViewModel: CartViewModel by activityViewModels()
     private val favoritesViewModel: FavouritesViewModel by activityViewModels()
+    private val checkoutViewModel: CheckoutViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
-
         binding = FragmentProfileBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -33,28 +34,26 @@ class ProfileFragment : Fragment(), CartFavouritesListener.CartFavoritesListener
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Initialize SharedPreferences
         sharedPreferences = requireContext().getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
 
-        // Retrieve username from SharedPreferences
         val username = sharedPreferences.getString("username", "DefaultUsername")
 
-        // Set username to TextView
         binding.textViewUsername.text = username
 
-        // Observe changes in cart items count
         cartViewModel.cartItemCount.observe(viewLifecycleOwner, Observer { count ->
             binding.cartItemCountTextView.text = "Cart Items: $count"
         })
 
-        // Observe changes in favorites count
         favoritesViewModel.favouritesCount.observe(viewLifecycleOwner, Observer { count ->
             binding.favoritesCountTextView.text = "Favorites: $count"
         })
 
-        // Set click listener for the logout button
+        checkoutViewModel.checkedOutItemCount.observe(viewLifecycleOwner, Observer { count ->
+            binding.checkOutCountTextView.text = "Checked Out Items: $count"
+        })
+
         binding.out.setOnClickListener {
-            SessionManager.setLoggedIn(requireContext(), false) // Logging out the user
+            SessionManager.setLoggedIn(requireContext(), false)
             startWelcomeActivity()
         }
         binding.cartItemCountTextView.setOnClickListener {
@@ -70,6 +69,7 @@ class ProfileFragment : Fragment(), CartFavouritesListener.CartFavoritesListener
         startActivity(intent)
         requireActivity().finish()
     }
+
     private fun startCartFragment() {
         val fragmentManager: FragmentManager = requireActivity().supportFragmentManager
         fragmentManager.beginTransaction()
@@ -77,20 +77,13 @@ class ProfileFragment : Fragment(), CartFavouritesListener.CartFavoritesListener
             .addToBackStack(null)
             .commit()
     }
+
     private fun startFavouritesFragment() {
         val fragmentManager: FragmentManager = requireActivity().supportFragmentManager
         fragmentManager.beginTransaction()
             .replace(android.R.id.content, FavouritesFragment())
             .addToBackStack(null)
             .commit()
-    }
-
-    override fun addToCart() {
-        // No need to implement here
-    }
-
-    override fun addToFavorites() {
-        // No need to implement here
     }
 
     object SessionManager {
