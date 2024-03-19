@@ -6,8 +6,6 @@ import retrofit2.http.FormUrlEncoded
 import retrofit2.http.Headers
 import retrofit2.http.POST
 
-data class DefaultResponse(val message: String)
-
 data class LoginResponse(val token: String)
 
 data class UserProfileResponse(val username: String, val email: String)
@@ -18,6 +16,7 @@ interface SoriesAPI {
     @Headers("Accept: application/json")
     @POST("register")
     fun registerUser(
+        @Field("name") name: String,
         @Field("username") username: String,
         @Field("email") email: String,
         @Field("password") password: String

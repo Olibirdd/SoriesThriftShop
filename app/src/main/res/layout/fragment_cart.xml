@@ -52,6 +52,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/black"
+                    android:hapticFeedbackEnabled="true"
                     android:layout_gravity="center_vertical"
                     android:layout_marginEnd="16dp" />
 
@@ -93,6 +94,7 @@
         android:id="@+id/checkoutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FFA500"
         android:text="Checkout"
         android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"

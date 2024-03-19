@@ -13,12 +13,16 @@ import androidx.navigation.fragment.findNavController
 import com.ferrer.johnoliver.block1.project.soriesthriftshop.R
 import android.content.Context
 import android.content.SharedPreferences
+import api.LoginResponse
+import api.SoriesClient
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 
 class LoginFragment : Fragment() {
 
     private lateinit var binding: FragmentLoginBinding
-    private lateinit var dbHelper: DatabaseHelper
     private lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreateView(
@@ -32,25 +36,15 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Initialize the SQLite database helper
-        dbHelper = DatabaseHelper(requireContext())
-
         // Initialize SharedPreferences
         sharedPreferences = requireContext().getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
 
         binding.button3.setOnClickListener {
-            val username = binding.Uname.text.toString().trim()
+            val email = binding.Uname.text.toString().trim()
             val password = binding.pass.text.toString().trim()
 
-            if (username.isNotEmpty() && password.isNotEmpty()) {
-                if (dbHelper.verifyUser(username, password)) {
-                    Toast.makeText(requireContext(), "Login successful!", Toast.LENGTH_SHORT).show()
-                    // Store username in SharedPreferences
-                    sharedPreferences.edit().putString("username", username).apply()
-                    startMainActivity()
-                } else {
-                    Toast.makeText(requireContext(), "Invalid username or password", Toast.LENGTH_SHORT).show()
-                }
+            if (email.isNotEmpty() && password.isNotEmpty()) {
+                loginUser(email, password)
             } else {
                 Toast.makeText(requireContext(), "Username and password are required", Toast.LENGTH_SHORT).show()
             }
@@ -60,12 +54,30 @@ class LoginFragment : Fragment() {
         }
     }
 
+    private fun loginUser(email: String, password: String) {
+        SoriesClient.instance.loginUser(email, password).enqueue(object : Callback<LoginResponse> {
+            override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
+                if (response.isSuccessful) {
+                    Toast.makeText(requireContext(), "Login successful!", Toast.LENGTH_SHORT).show()
+                    // Store token in SharedPreferences
+                    sharedPreferences.edit().putString("token", response.body()?.token).apply()
+                    startMainActivity()
+                } else {
+                    Toast.makeText(requireContext(), "Invalid username or password", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
+                Toast.makeText(requireContext(), "Error: ${t.message}", Toast.LENGTH_SHORT).show()
+            }
+        })
+    }
+
     private fun startMainActivity() {
         val intent = Intent(requireActivity(), MainActivity::class.java)
         startActivity(intent)
         requireActivity().finish() // Optional: finish the current activity
     }
-
 
     private fun startSignupFragment() {
         val fragmentManager: FragmentManager = requireActivity().supportFragmentManager
